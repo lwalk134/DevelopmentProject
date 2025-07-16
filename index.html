@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Introduction to Web Development</h1>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Welcome to Web Development</h2>
+            <div class="responsive-image">
+                <img src="https://via.placeholder.com/1200x400" alt="Web development concepts" loading="lazy">
+            </div>
+            <p>This project explores the fundamental technologies that power the modern web. Learn about the history, core technologies, and test your knowledge with our interactive quiz.</p>
+        </section>
+
+        <section class="quick-links">
+            <h2>Explore Web Development</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>History</h3>
+                    <p>Trace the evolution of web technologies from their inception to modern day.</p>
+                    <a href="history.html" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Technologies</h3>
+                    <p>Understand the core technologies that make up the modern web.</p>
+                    <a href="technologies.html" class="btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3>Test Your Knowledge</h3>
+                    <p>Take our interactive quiz to see how much you've learned.</p>
+                    <a href="quiz.html" class="btn">Take Quiz</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>IT 3203 Web Development Project &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
