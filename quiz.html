@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Web Development Quiz</h1>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="quiz.html" class="active">Quiz</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz-intro">
+                <p>This quiz will test your understanding of fundamental web development concepts. You'll have 5 minutes to complete 10 questions.</p>
+            </div>
+            
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%"></div>
+                </div>
+                <p>Question <span id="current-question">1</span> of <span id="total-questions">10</span></p>
+            </div>
+            
+            <div class="quiz-container">
+                <div id="question-container" class="hide">
+                    <p id="question"></p>
+                    <div id="answer-buttons" class="btn-grid"></div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="start-btn" class="btn">Start Quiz</button>
+                    <button id="next-btn" class="btn hide">Next Question</button>
+                </div>
+            </div>
+            
+            <div id="results" class="hide">
+                <h3>Quiz Results</h3>
+                <p>Your score: <span id="score">0</span>/<span id="max-score">10</span></p>
+                <p id="result-message"></p>
+                <button id="restart-btn" class="btn">Take Quiz Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>IT 3203 Web Development Project &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
